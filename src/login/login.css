@@ -1,0 +1,186 @@
+.login-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f6f8fc 0%, #f1f4f9 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+.login-content {
+  margin-top: 48px;
+  text-align: center;
+  width: 360px;
+  padding: 32px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.logo-container {
+  margin-bottom: 24px;
+}
+
+.logo {
+  width: 180px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.welcome-text {
+  color: #666;
+  margin-bottom: 24px;
+  font-size: 16px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.login-content input[type="text"],
+.login-content input[type="password"] {
+  width: 100%;
+  padding: 14px 16px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.2s ease;
+  background: #f9fafb;
+}
+
+.login-content input[type="text"]:focus,
+.login-content input[type="password"]:focus {
+  outline: none;
+  border-color: #a6192e;
+  background: white;
+  box-shadow: 0 0 0 4px rgba(166, 25, 46, 0.1);
+}
+
+.login-button {
+  width: 100%;
+  padding: 14px;
+  background: #a6192e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 8px;
+}
+
+.login-button:hover {
+  background: #8b1526;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(166, 25, 46, 0.2);
+}
+
+.login-button:active {
+  transform: translateY(0);
+}
+
+.login-footer {
+  margin-top: 24px;
+  font-size: 14px;
+  color: #666;
+}
+
+.login-footer a {
+  color: #a6192e;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.login-footer a:hover {
+  color: #8b1526;
+  text-decoration: underline;
+}
+
+.login-footer p {
+  margin: 8px 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.login-content {
+  animation: fadeIn 0.6s ease-out;
+}
+
+.login-content:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+.login-content h1 {
+  font-size: 28px;
+  margin-bottom: 32px;
+  color: #1a1a1a;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+}
+
+.divider span {
+  padding: 0 10px;
+  color: #666;
+  font-size: 14px;
+}
+
+.microsoft-login-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 12px;
+  background-color: #2f2f2f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.microsoft-login-button:hover {
+  background-color: #1f1f1f;
+}
+
+.microsoft-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.captcha-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+

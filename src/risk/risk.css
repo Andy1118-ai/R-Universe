@@ -1,0 +1,124 @@
+/* General Layout */
+.risk-container {
+  min-height: 100vh;
+  background: #f3f4f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.risk-header {
+  margin-top: 48px;
+  text-align: center;
+}
+
+.risk-logo {
+  width: 70px;
+  margin-bottom: 8px;
+}
+
+.risk-title {
+  color: #a6192e;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.risk-underline {
+  width: 80px;
+  height: 5px;
+  background: #ffd600;
+  margin: 0.5rem auto 1.5rem auto;
+  border-radius: 3px;
+}
+
+.risk-subtitle {
+  color: #3a3a3a;
+  font-size: 1.1rem;
+  margin-bottom: 32px;
+}
+
+.risk-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.risk-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.risk-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+  padding: 36px 32px 28px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 220px;
+  min-height: 150px;
+  transition: all 0.3s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+.risk-card:hover {
+  box-shadow: 0 8px 32px rgba(166,25,46,0.13);
+  transform: translateY(-4px) scale(0.95);
+  min-width: 200px;
+}
+
+.risk-card-icon {
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+}
+
+.risk-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1a2233;
+  margin-bottom: 8px;
+  transition: color 0.2s ease;
+}
+
+.risk-card:hover .risk-card-title {
+  color: #a6192e;
+}
+
+.risk-card:active .risk-card-title {
+  color: #8b1526;
+}
+
+.risk-card-underline {
+  width: 40px;
+  height: 4px;
+  background: #ffd600;
+  border-radius: 2px;
+}
+
+.risk-footer {
+  text-align: center;
+  color: #888;
+  font-size: 1rem;
+  margin: 40px 0 16px 0;
+}
+
+@media (max-width: 900px) {
+  .risk-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .risk-title {
+    font-size: 2rem;
+  }
+  .risk-cards {
+    grid-template-columns: 1fr;
+  }
+}
